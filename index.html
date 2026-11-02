@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfólio | Desenvolvedora de Software</title>
+<style>
+:root{--bg:#fdf8f7;--surface:rgba(255,255,255,.75);--text:#3a3347;--muted:#7a7188;--rose:#f6d5e0;--lilac:#e2d8f5;--peach:#fde3d0;--mint:#d7efe6;--accent:#9b7fc7;--border:rgba(155,127,199,.22);--shadow:0 10px 30px rgba(155,127,199,.15);color-scheme:light dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a1624;--surface:rgba(42,35,58,.75);--text:#f1ebf7;--muted:#b4a9c6;--rose:#4a2f45;--lilac:#3b3158;--peach:#4a3733;--mint:#2b4540;--accent:#c3aaf0;--border:rgba(195,170,240,.2);--shadow:0 10px 30px rgba(0,0,0,.3);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1a1624;--surface:rgba(42,35,58,.75);--text:#f1ebf7;--muted:#b4a9c6;--rose:#4a2f45;--lilac:#3b3158;--peach:#4a3733;--mint:#2b4540;--accent:#c3aaf0;--border:rgba(195,170,240,.2);--shadow:0 10px 30px rgba(0,0,0,.3);color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.7;overflow-x:hidden;background:var(--bg);background-image:radial-gradient(ellipse at 15% 0%,var(--rose),transparent 50%),radial-gradient(ellipse at 90% 10%,var(--lilac),transparent 50%),radial-gradient(ellipse at 50% 100%,var(--peach),transparent 55%);background-attachment:fixed}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px}
+nav{display:flex;gap:6px;justify-content:center;padding:22px 0;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;font-size:.92rem;padding:7px 16px;border-radius:99px;transition:.25s}
+nav a:hover{background:var(--surface);color:var(--accent)}
+.hero{text-align:center;padding:56px 0 64px}
+.tag{display:inline-block;background:var(--surface);border:1px solid var(--border);color:var(--accent);padding:6px 16px;border-radius:99px;font-size:.85rem;letter-spacing:.04em}
+h1{font-family:Georgia,"Times New Roman",serif;font-weight:500;font-size:clamp(2.2rem,7vw,3.8rem);line-height:1.15;margin:24px auto;max-width:700px;letter-spacing:-.01em}
+h1 em{font-style:italic;color:var(--accent)}
+.lead{color:var(--muted);font-size:1.1rem;max-width:520px;margin:0 auto}
+.cta{display:inline-block;margin-top:30px;padding:13px 30px;color:var(--text);background:linear-gradient(120deg,var(--rose),var(--lilac));border:1px solid var(--border);border-radius:99px;text-decoration:none;font-weight:600;box-shadow:var(--shadow);transition:.25s}
+.cta:hover{transform:translateY(-3px)}
+section{padding:40px 0}
+h2{font-family:Georgia,"Times New Roman",serif;font-weight:500;font-size:1.8rem;margin:0 0 22px;text-align:center}
+h2::after{content:"♡";display:block;color:var(--accent);font-size:.9rem;margin-top:4px;opacity:.7}
+.about{max-width:620px;margin:0 auto;text-align:center;color:var(--muted);font-size:1.05rem}
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--surface);backdrop-filter:blur(8px);border:1px solid var(--border);border-radius:26px;padding:28px;box-shadow:var(--shadow);transition:.3s;text-align:center}
+.card:hover{transform:translateY(-6px)}
+.ico{width:60px;height:60px;margin:0 auto 14px;display:grid;place-items:center;font-size:1.7rem;border-radius:50%}
+.c1 .ico{background:var(--rose)}.c2 .ico{background:var(--lilac)}.c3 .ico{background:var(--mint)}.c4 .ico{background:var(--peach)}
+.card h3{font-family:Georgia,"Times New Roman",serif;font-weight:500;margin:0 0 8px;font-size:1.2rem}
+.card p{margin:0;color:var(--muted);font-size:.97rem}
+.badge{display:inline-block;margin-top:14px;background:var(--peach);color:var(--text);font-size:.8rem;padding:5px 14px;border-radius:99px}
+.badge.alt{background:var(--lilac)}
+.skills{display:flex;flex-wrap:wrap;gap:12px;padding:0;margin:0;list-style:none;justify-content:center}
+.skills li{background:var(--surface);border:1px solid var(--border);padding:9px 20px;border-radius:99px;transition:.25s}
+.skills li:nth-child(4n+1):hover{background:var(--rose)}.skills li:nth-child(4n+2):hover{background:var(--lilac)}.skills li:nth-child(4n+3):hover{background:var(--mint)}.skills li:nth-child(4n):hover{background:var(--peach)}
+.skills li:hover{transform:translateY(-3px)}
+footer{margin:40px 0 56px;padding:34px 24px;text-align:center;border-radius:30px;background:linear-gradient(120deg,var(--rose),var(--lilac) 60%,var(--mint));border:1px solid var(--border);box-shadow:var(--shadow)}
+footer p{margin:0}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="#sobre">Sobre</a><a href="#projetos">Projetos</a><a href="#habilidades">Habilidades</a><a href="#contato">Contato</a></nav>
+
+<header class="hero">
+<span class="tag">✿ Desenvolvimento de Software</span>
+<h1>Transformando ideias em <em>código com carinho</em> e propósito</h1>
+<p class="lead">Estudante de Sistemas de Informação na PUC Minas e técnica em Desenvolvimento de Sistemas pelo SENAI.</p>
+<a class="cta" href="#projetos">Conheça meus projetos</a>
+</header>
+
+<section id="sobre">
+<h2>Sobre mim</h2>
+<p class="about">Desenvolvo projetos com Python, JavaScript, C#, SQL e Node.js e atuo em Iniciação Científica, unindo software e inteligência artificial. Busco aprimorar minhas habilidades e contribuir para soluções tecnológicas inovadoras.</p>
+</section>
+
+<section id="projetos">
+<h2>Projetos</h2>
+<div class="grid">
+<article class="card c1">
+<div class="ico">🐾</div>
+<h3>Amparo Animal</h3>
+<p>Plataforma voltada à adoção e divulgação de animais perdidos e encontrados.</p>
+<span class="badge">🏆 Melhor Trabalho Interdisciplinar · 2º sem. 2025</span>
+</article>
+<article class="card c2">
+<div class="ico">🔬</div>
+<h3>Iniciação Científica</h3>
+<p>Ferramenta de recuperação de informações farmacológicas com Inteligência Artificial, Machine Learning e Processamento de Linguagem Natural.</p>
+<span class="badge alt">IA · ML · PLN</span>
+</article>
+</div>
+</section>
+
+<section id="habilidades">
+<h2>Habilidades</h2>
+<ul class="skills"><li>Python</li><li>JavaScript</li><li>C#</li><li>SQL</li><li>Node.js</li><li>Machine Learning</li><li>PLN</li></ul>
+</section>
+
+<section id="formacao">
+<h2>Formação</h2>
+<div class="grid">
+<div class="card c3"><div class="ico">🎓</div><h3>Sistemas de Informação</h3><p>PUC Minas</p></div>
+<div class="card c4"><div class="ico">🛠️</div><h3>Técnica em Desenvolvimento de Sistemas</h3><p>SENAI</p></div>
+</div>
+</section>
+
+<footer id="contato">
+<p>💌 Vamos conversar? Adicione aqui seu e-mail, LinkedIn e GitHub.</p>
+</footer>
+</div>
+</body>
+</html>
